@@ -2,6 +2,9 @@ package com.mod.minicraft.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
 import com.mod.minicraft.MinicraftMod;
 
 public class ItemBase extends Item {
@@ -23,5 +26,5 @@ public class ItemBase extends Item {
 		super.setCreativeTab(tab);
 		return this;
 	}
-
+	
 }

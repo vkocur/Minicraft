@@ -43,6 +43,7 @@ public class ModItems {
 			for (final Item item : items) {
 				registry.register(item);
 				ITEMS.add(item);
+				((ItemBase) item).registerItemModel();
 			}
 
 			initializeItems();
@@ -52,26 +53,8 @@ public class ModItems {
 		 * Initialize items
 		 */
 		public static void initializeItems() {
-			
 		}
 
 	}	
 	
-//	@SubscribeEvent
-//	public void registerBlocks(RegistryEvent event) {
-//		//RegistryEvent.Register<Item> event
-//	    System.out.println("== Register item");
-//		//event.getRegistry().registerAll(ingotCopper);
-//	    //registerItemModel(ingotCopper);
-//	}
-//	
-//	private static <T extends Item> T registerItemModel(T item) {
-//
-//		if (item instanceof ItemBase) {
-//			((ItemBase)item).registerItemModel();
-//		}
-//
-//		return item;
-//	}
-
 }
