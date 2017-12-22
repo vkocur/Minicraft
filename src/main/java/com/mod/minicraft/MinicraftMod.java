@@ -1,5 +1,6 @@
 package com.mod.minicraft;
 
+import com.mod.minicraft.block.ModBlocks;
 import com.mod.minicraft.item.ChatItems;
 import com.mod.minicraft.item.ModItems;
 import com.mod.minicraft.proxy.CommonProxy;
@@ -30,6 +31,7 @@ public class MinicraftMod
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(NAME + " preInit ...");
 		ModItems.init();
+		ModBlocks.init();
 	}
 	
     @EventHandler
